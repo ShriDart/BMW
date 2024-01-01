@@ -1,0 +1,357 @@
+//different shapes
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	line(100,100,400,100);
+	circle(100,200,30);
+	rectangle(125,115,215,165);
+	arc(500,100,0,180,40);
+	ellipse(400,200,0,360,30,50);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//line pattern
+
+/*#include<graphics.h>
+void linepattern(int pattern){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	setlinestyle(pattern,1,3);
+	line(100,100,400,100);
+	getch();
+	closegraph();
+}
+int main(){
+	int pattern;
+	printf("Enter any of 1,2,3,4 : ");
+	scanf("%d",&pattern);
+	linepattern(pattern);
+	return 0;
+}*/
+
+//Cocentric circles
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	setcolor(RED);
+	circle(300,200,50);
+	setcolor(BLUE);
+	circle(300,200,40);
+	setcolor(GREEN);
+	circle(300,200,30);
+	setcolor(YELLOW);
+	circle(300,200,20);
+	setcolor(WHITE);
+	circle(300,200,10);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//rectangle bar
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	rectangle(30,360,100,400);
+	rectangle(110,220,200,400);
+	rectangle(210,105,300,400);
+	rectangle(310,5,400,400);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//3dbar
+
+/*#include <graphics.h>
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "c:\\Turboc3\\BGI");
+	 
+    setfillstyle(XHATCH_FILL, RED);
+    bar3d(10,10,30,200,10,1);
+    bar3d(40,50,60,200,10,1);
+    bar3d(70,60,90,200,10,1);
+    bar3d(100,30,120,200,10,1);
+    getch();
+    closegraph();
+    return 0;
+}*/
+
+//bar
+
+/*#include <graphics.h>
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "c:\\Turboc3\\BGI");
+	 
+    bar(10,10,30,200);
+    bar(40,50,60,200);
+    bar(70,60,90,200);
+    bar(100,30,120,200);
+    getch();
+    closegraph();
+    return 0;
+}*/
+
+//Pie chart
+
+/*#include<graphics.h>
+int main(){
+	int gd = DETECT, gm;
+	initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
+	setfillstyle(LINE_FILL,BLUE);
+	pieslice(300,300,0,60,100);
+	setfillstyle(LINE_FILL,WHITE);
+	pieslice(300,300,60,90,100);
+	setfillstyle(LINE_FILL,RED);
+	pieslice(300,300,75,180,100);
+	setfillstyle(LINE_FILL,YELLOW);
+	pieslice(300,300,180,360,100);
+	getch();
+	return 0;
+}*/
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	ellipse(200,200,275,265,80,80);
+	ellipse(200,200,290,250,20,20);
+	line(193,218,193,277);
+	line(206,218,206,277);
+	setfillstyle(1,1);
+	floodfill(150,150,15);
+	
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//Sine wave
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	line(150,200,500,200);
+	line(150,100,150,300);
+	arc(200,200,0,180,49);
+	arc(297,200,180,360,49);
+	arc(396,200,0,180,49);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//Rainbow	
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	line(100,200,400,200);
+	setcolor(RED);
+	arc(250,200,0,180,10);
+	setcolor(YELLOW);
+	arc(250,200,0,180,20);
+	setcolor(GREEN);
+	arc(250,200,0,180,30);
+	setcolor(BLUE);
+	arc(250,200,0,180,40);
+	setcolor(WHITE);
+	arc(250,200,0,180,50);
+	setcolor(GREEN);
+	arc(250,200,0,180,60);
+	setcolor(RED);
+	arc(250,200,0,180,70);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+/*#include <graphics.h>
+#include <cstdlib>
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
+    for (int i = 0; i < 10; ++i) {
+        int x = rand() % getmaxx();
+        int y = rand() % getmaxy();
+        int radius = rand() % 50 + 10;
+        int color = rand() % 15 + 1;
+        setcolor(color);
+        setfillstyle(SOLID_FILL, color);
+        fillellipse(x, y, radius, radius);
+    }
+    delay(2000);
+    closegraph();
+    return 0;
+}*/
+
+//Random circle screen saver
+
+/*#include<graphics.h>
+#include<stdlib.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	for(int i=0;i<20;i++){
+		int x=rand()%500;
+		int y=rand()%600;
+		int radius=rand()%45;
+		int color=rand()%15+1;
+		setcolor(color);
+		setfillstyle(SOLID_FILL,color);
+		fillellipse(x,y,radius,radius);
+		circle(x,y,radius);
+	}
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//Stars in the night sky
+
+/*#include <graphics.h>
+#include <cstdlib>
+int main() {
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
+	for(int i=0;i<=100;i++){
+		putpixel(rand()%getmaxx(),rand()%getmaxy(),WHITE);
+	}
+	getch();
+    closegraph();
+
+    return 0;
+}*/
+
+//Rangoli - 1
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	circle(200,200,50);
+	circle(200,200,25);
+	line(155,225,245,225);
+	line(200,150,245,225);
+	line(200,150,155,225);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//Rangoli - 2
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	rectangle(200,200,400,300);
+	line(200,250,300,300);
+	line(200,250,300,200);
+	line(300,200,400,250);
+	line(300,300,400,250);
+	rectangle(270,280,330,220);
+	circle(300,250,25);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//Rangoli - 3
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	circle(200,200,40);
+	circle(240,270,40);
+	circle(160,270,40);
+	line(200,200,240,270);
+	line(200,200,160,270);
+	line(160,270,240,270);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//House
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	rectangle(200,200,400,350);
+	rectangle(220,250,260,300);
+	rectangle(340,250,380,300);
+	rectangle(220,250,260,300);
+	rectangle(360,330,240,350);
+	line(240,340,360,340);
+	rectangle(280,250,320,329);
+	line(220,270,260,270);
+	line(380,270,340,270);
+	line(240,300,240,270);
+	line(360,300,360,270);
+	line(300,100,400,200);
+	line(300,100,200,200);
+	line(350,130,350,150);
+	line(360,130,360,160);
+	rectangle(340,120,370,130);
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+//Algorithm
+
+/*#include<graphics.h>
+int main(){
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\Turboc3\\BGI");
+	
+	ellipse(300,110,0,360,40,20);
+	
+	line(350,150,250,150);
+	line(330,180,240,180);
+	line(330,180,350,150);
+	line(240,180,250,150);
+	
+	rectangle(250,200,340,230);
+	
+	line(350,250,250,250);
+	line(330,280,240,280);
+	line(330,280,350,250);
+	line(240,280,250,250);
+	
+	ellipse(300,320,0,360,40,20);
+	
+	line(300,150,300,130);
+	line(300,200,300,180);
+	line(300,250,300,230);
+	line(300,300,300,280);
+	
+	outtextxy(285,100,"Start");
+	outtextxy(260,154,"Read p,r,t");
+	outtextxy(252,205,"SI=(p*r*t)/100");
+	outtextxy(255,255,"Print result");
+	outtextxy(285,310,"Stop");
+	
+	getch();
+	closegraph();
+	return 0;
+}*/
+
+
+
+
